@@ -1,0 +1,58 @@
+/* Custom Styles for the IT & Entrepreneurship Vault */
+
+/* 1. Smooth Scrolling for Navigation */
+html {
+    scroll-behavior: smooth;
+}
+
+/* 2. Custom Gradient for the Hero Section */
+header {
+    background: linear-gradient(135deg, #1e293b 0%, #334155 100%);
+    position: relative;
+    overflow: hidden;
+}
+
+/* 3. Subtle Hover Animation for Project Cards */
+#projects .bg-white {
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+#projects .bg-white:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
+}
+
+/* 4. Terminal-style blinking cursor for the Knowledge Base */
+#notes .font-mono::after {
+    content: "|";
+    animation: blink 1s infinite;
+}
+
+@keyframes blink {
+    0%, 100% { opacity: 1; }
+    50% { opacity: 0; }
+}
+
+/* 5. Custom Scrollbar for a Tech Look */
+::-webkit-scrollbar {
+    width: 8px;
+}
+
+::-webkit-scrollbar-track {
+    background: #f1f1f1;
+}
+
+::-webkit-scrollbar-thumb {
+    background: #2c3e50;
+    border-radius: 10px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+    background: #34495e;
+}
+
+/* 6. Text Selection Color */
+::selection {
+    background: #60a5fa; /* Light blue */
+    color: white;
+}
